@@ -12,6 +12,6 @@ defmodule Fluent.Mixfile do
   end
 
   defp deps do
-    [{ :message_pack, github: "mururu/msgpack-elixir" }]
+    [{ :msgpax, "~> 0.8" }]
   end
 end
