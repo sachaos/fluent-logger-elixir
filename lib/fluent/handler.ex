@@ -24,7 +24,7 @@ defmodule Fluent.Handler do
     { msec, sec, _ } = :os.timestamp
     tag = make_tag(top_tag, tag)
     content = [tag, msec * 1000000 + sec, data]
-    MessagePack.pack(content)
+    Msgpax.pack(content)
   end
 
   defp make_tag(top_tag, tag) do
