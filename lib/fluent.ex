@@ -1,5 +1,5 @@
 defmodule Fluent do
-  def add(ref, tag, options // []) do
+  def add(ref, tag, options \\ []) do
     host = options[:host] || "localhost"
     port = options[:port] || 24224
 
